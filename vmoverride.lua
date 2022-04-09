@@ -1,6 +1,6 @@
 local font = draw.CreateFont("Consolas", 0, 0)
 
--- This is a really stupid way of getting a loop to work, too bad.
+-- This is prob a really stupid way of getting a loop to work, too bad.
 local function why()
 
     draw.SetFont(font)
