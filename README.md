@@ -25,4 +25,8 @@ There are 2 way to load luas.
 
 Method 1: In the menu
 
-Method 2: 
+Method 2: Using lua_load in console
+
+Method 1 is the easiest, so I just recommend using the menu.
+
+Find your lua you wanna load and press load.
