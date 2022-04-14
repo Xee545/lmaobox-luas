@@ -1,18 +1,15 @@
-local font = draw.CreateFont("Consolas", 0, 0)
+local x = 20
+local y = 4
+local z = -12
 
--- This is prob a really stupid way of getting a loop to work, too bad.
-local function why()
+local function override()
 
-    draw.SetFont(font)
-    draw.Color( 0, 0, 0, 0 )
-
-    client.Command( "tf_viewmodels_offset_override 20 4 -12", true )
-
-    draw.Text( 1, 1, "" )
-
+  client.RemoveConVarProtection( "tf_viewmodels_offset_override" )
+  client.SetConVar( "tf_viewmodels_offset_override" x, y, z )
+  
 end
 
 print("VM Override Loaded!")
 engine.PlaySound("buttons/button3.wav")
 
-callbacks.Register("Draw", "draw", why)
+callbacks.Register(why)
