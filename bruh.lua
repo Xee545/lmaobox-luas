@@ -3,6 +3,8 @@ local font = draw.CreateFont("Consolas", 16, 500, FONTFLAG_OUTLINE, FONTFLAG_ADD
 
 local function PingIndicator()
   
+  
+  --[[
   local InServer = clientstate.GetClientSignonState() -- Check if the player is fully is a game.
   -- I'm gonna make a alt version of this bullshit that prints/shows the status of each variable.
   
@@ -19,14 +21,14 @@ local function PingIndicator()
       draw.Color( 250, 255, 0, 255 )
       draw.Text( 10, 500, "⚠ "..ping )
      
-    end
+    end ]]-- I Realised it might just be better todo something else. I'm gonna try it soon
     
    -- Debug Shit. 
    draw.SetFont(font)
    draw.Color( 250, 255, 0, 255 )
    draw.Text( 10, 500, "This is some stupid bs" )
-   draw.Text( 10, 525, "InServer Status: "..InServer )
-   draw.Text( 10, 550, "Ping Status: "..ping \
+ --  draw.Text( 10, 525, "InServer Status: "..InServer )
+   draw.Text( 10, 550, "Ping Status: "..ping )
    draw.Text( 10, 575, "Reminder: If ping returns 0, commit suicide" )
     
     
